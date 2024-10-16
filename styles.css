@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: background-image 0.5s; /* Suaviza as mudanças de imagem */
+}
+
+    body {
+position: relative;
+background-size: cover; /* Faz a imagem preencher toda a tela */
+background-position: center; /* Centraliza a imagem */
+background-repeat: no-repeat;
+background-color: transparent; /* Define cor inicial transparente */
+transition: background-color 0.5s; /* Suaviza as mudanças */  
+}
+
+.fase1 {
+    background-image: url("./imagens/04.jpg");  
+}
+
+.fase2 {
+    background-image: url("./imagens/02.jpg");
+}
+
+.fase3 {
+    background-image: url("./imagens/03.jpg");
+}
+
+.fase4 {
+    background-image: url("./imagens/01.jpg");
+}
+
+.fase5 {
+    background-image: url("./imagens/05.jpg");
+}
+
+.fase6 {
+    background-image: url("./imagens/06.jpg");
+}
+
+.fase7 {
+    background-image: url("./imagens/07.jpg");
+}
+
+.fase8 {
+    background-image: url("./imagens/08.jpg");
+}
+
+.fase9 {
+    background-image: url("./imagens/09.jpg");
+}
+
+.fase10 {
+    background-image: url("./imagens/10.jpg");
+}
+
+#game-container {
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fase {
+    display: none;
+}
+
+.fase.active {
+    display: block;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Animação contínua para piscada verde */
+@keyframes piscadaVerde {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(0, 255, 0, 0.3);
+        background-blend-mode: screen;
+    }
+}
+
+/* Animação contínua para piscada vermelha */
+@keyframes piscadaVermelha {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(255, 0, 0, 0.3);
+        background-blend-mode: screen;
+    }
+}
+
+/* Classe para piscada verde */
+.piscada-verde {
+    animation: piscadaVerde 1s ease-in-out forwards;
+}
+
+/* Classe para piscada vermelha */
+.piscada-vermelha {
+    animation: piscadaVermelha 1s ease-in-out forwards;
+}

@@ -40,26 +40,6 @@ transition: background-color 0.5s; /* Suaviza as mudanças */
     background-image: url("./imagens/05.jpg");
 }
 
-.fase6 {
-    background-image: url("./imagens/06.jpg");
-}
-
-.fase7 {
-    background-image: url("./imagens/07.jpg");
-}
-
-.fase8 {
-    background-image: url("./imagens/08.jpg");
-}
-
-.fase9 {
-    background-image: url("./imagens/09.jpg");
-}
-
-.fase10 {
-    background-image: url("./imagens/10.jpg");
-}
-
 #game-container {
     width: 80%;
     max-width: 500px;

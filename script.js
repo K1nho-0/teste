@@ -43,14 +43,14 @@ function avancarFase(faseAtual) {
         proximaFaseDiv.classList.add('active');
 
         // Remove as classes de fundo e adiciona a nova classe correspondente
-        document.body.classList.remove('fase1', 'fase2', 'fase3', 'fase4', 'fase5', 'fase6', 'fase7', 'fase8', 'fase9', 'fase10');
+        document.body.classList.remove('fase1', 'fase2', 'fase3', 'fase4');
         
         // Adiciona a classe correspondente à nova fase
         document.body.classList.add(`fase${faseAtual + 1}`);
     } else {
         alert("Parabéns! Você completou todas as fases!");
         // Reseta o fundo ao final
-        document.body.classList.remove('fase1', 'fase2', 'fase3', 'fase4', 'fase5', 'fase6', 'fase7', 'fase8', 'fase9', 'fase10'); // Remove todas as classes de fase
+        document.body.classList.remove('fase1', 'fase2', 'fase3', 'fase4'); // Remove todas as classes de fase
         document.body.style.backgroundImage = "url('./imagens/default.jpg')"; // Imagem padrão ou de conclusão
     }
 }
